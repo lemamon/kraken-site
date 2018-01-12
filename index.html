@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A site of Kraken Tech.">
+    <title>Kraken Tech</title>
+    <link rel="shortcut icon" type="ico" href="img/fav.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="css/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="particles-js">
+        <div class="splash-container">
+            <div class="splash">
+                <span id="home-box">
+                <h1 class="splash-head">
+                    <img class="pure-img" src="img/logo.svg" alt="logo"/>
+                </h1>
+            </span>
+                <span id="we-box" class="hide">
+                <h1 class="splash-head">
+                    Quem Somos
+                </h1>
+                <p class="splash-subhead">Empresa de desenvolvimento de sofware web e mobile escrevendo mais coisa, mais coisa, mais coisa, mais coisa.</p>
+            </span>
+                <span id="service-box" class="hide">
+                <h1 class="splash-head">
+                    Serviços
+                </h1>
+                <p class="splash-subhead">Empresa de desenvolvimento de sofware web e mobile escrevendo mais coisa, mais coisa, mais coisa, mais coisa.</p>
+            </span>
+                <span id="contact-box" class="hide">
+                <h1 class="splash-head">
+                    Contato
+                </h1>
+                <p class="splash-subhead">Empresa de desenvolvimento de sofware web e mobile escrevendo mais coisa, mais coisa, mais coisa, mais coisa.</p>
+            </span>
+                <div>
+                    <div class="bg-menu">
+                        <ul class="pure-menu-list menu">
+                            <li class="pure-menu-item pure-menu-selected pure-menu-link" onclick="app.loadView(event)"  id="home">
+                                <img class="pure-img icon-menu" src="img/home-selected.svg" alt="home logo"/> 
+                                <img class="pure-img icon-menu hide" src="img/home.svg" alt="home logo"/>                                 
+                            </li>
+                            <li class="pure-menu-item pure-menu-link" onclick="app.loadView(event)" id="we">
+                                <img class="pure-img icon-menu hide" src="img/we-selected.svg" alt="about us">
+                                <img class="pure-img icon-menu" src="img/we.svg" alt="about us">                                
+                            </li>
+                            <li class="pure-menu-item pure-menu-link" onclick="app.loadView(event)" id="service">
+                                <img class="pure-img icon-menu hide" src="img/service-selected.svg" alt="serivces">
+                                <img class="pure-img icon-menu" src="img/service.svg" alt="serivces">                                
+                            </li>
+                            <li class="pure-menu-item pure-menu-link" onclick="app.loadView(event)" id="contact">
+                                <img class="pure-img icon-menu hide" src="img/contact-selected.svg" alt="contact">
+                                <img class="pure-img icon-menu" src="img/contact.svg" alt="contact">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p>
+                    <!-- <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a> -->
+                </p>
+            </div>
+        </div>
+    <script src="js/app.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script>
+        let app = new App();
+    </script>
+</body>
+
+</html>
