@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Varela");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Varela", sans-serif;
+}
+
+section {
+  height: 300px;
+}
+
+/* nav */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 15px;
+}
+
+nav ul li img {
+  width: 50px;
+}
+
+nav ul li img:hover {
+  transform: scale(1.5);
+}
+
+/* home */
+
+.home {
+  display: flex;
+}
+
+.logo {
+  max-width: 80%;
+  height: auto;
+  margin: 0 20px 100px;
+}
+
+/* about */
+
+.about {
+  display: none;
+  max-width: 527px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+@media (max-width: 460px) {
+  .about {
+    width: 80vw;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* services */
+
+.services {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 580px;
+  text-align: center;
+}
+
+.services div {
+  margin: 10px;
+}
+
+.services img {
+  max-width: 110px;
+}
+
+@media (max-width: 460px) {
+  .services {
+    width: 80vw;
+  }
+
+  .services img {
+    max-width: 55px;
+  }
+}
+
+/* contact */
+
+.contact {
+  display: none;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 501px;
+}
+
+.contact div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact div input {
+  width: 234px;
+}
+
+.contact input {
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.contact textarea {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  padding: 5px;
+}
+
+.contact input[type="button"] {
+  margin-top: 5px;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 21.5px;
+}
+
+.contact input[type="button"]:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 460px) {
+  .contact {
+    width: 80vw;
+  }
+  .contact div input {
+    width: 35vw;
+  }
+}
+
+/* fade */
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

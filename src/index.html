@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/ico" href="images/favico.ico" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Kraken</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a id="home" onclick="switchScrens(this)" href="#">
+            <img class="off" src="images/icons/home.png" alt="icon home" />
+          </a>
+        </li>
+        <li>
+          <a id="about" onclick="switchScrens(this)" href="#">
+            <img src="images/icons/who.png" alt="icon who" />
+          </a>
+        </li>
+        <li>
+          <a id="services" onclick="switchScrens(this)" href="#">
+            <img src="images/icons/service.png" alt="icon service" />
+          </a>
+        </li>
+        <li>
+          <a id="contact" onclick="switchScrens(this)" href="#">
+            <img src="images/icons/contact.png" alt="icon contact" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="home fade">
+      <img class="logo" src="images/kraken_logo.svg" alt="logo kraken" />
+    </section>
+    <section class="about fade">
+      <p>
+        A Kraken Tech é uma empresa de desenvolvimento de plataformas web e
+        aplicativos para os sistemas iOS e Android. Temos uma equipe com
+        profissionais da área de desenvolvimento e design especializada e
+        atualizada com as novas tecnologias do mercado. Afim desenvolver através
+        do nosso conhecimento o melhor produto para atender a necessidade da sua
+        empresa ou empreendimento.
+      </p>
+    </section>
+    <section class="services fade">
+      <div>
+        <img src="images/icons/mobile_icon.png" alt="mobile icon" />
+        <p>Mobile</p>
+      </div>
+      <div>
+        <img src="images/icons/web_icon.png" alt="web icon" />
+        <p>Web design</p>
+      </div>
+      <div>
+        <img src="images/icons/wearables_icon.png" alt="wearables icon" />
+        <p>Wearables</p>
+      </div>
+      <div>
+        <img src="images/icons/gamedesign_icon.png" alt="wearables icon" />
+        <p>Game</p>
+      </div>
+      <div>
+        <img src="images/icons/ar_icon.png" alt="AR icon" />
+        <p>AR</p>
+      </div>
+      <div>
+        <img src="images/icons/vr_icon.png" alt="VR icon" />
+        <p>VR</p>
+      </div>
+      <div>
+        <img src="images/icons/ux_icon.png" alt="UX icon" />
+        <p>UX</p>
+      </div>
+    </section>
+    <section class="contact fade">
+      <form>
+        <div>
+          <input type="text" name="name" id="name" placeholder="Nome" />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Assunto"
+          />
+        </div>
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Mensagem"
+        ></textarea>
+        <input onclick="submitForm()" value="Enviar" type="button" />
+      </form>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
